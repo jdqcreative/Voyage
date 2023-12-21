@@ -1,36 +1,98 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Voyage">
+      <UniqueIdentifier>{F04E97D8-DCF0-C1AE-C5AB-D502B1EC48FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Voyage\Events">
+      <UniqueIdentifier>{D4CCC0C0-408D-3CF7-09C8-8574754781D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Voyage\ImGui">
+      <UniqueIdentifier>{1A38FB89-069B-8A2E-AF20-C3E49B6256B1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Voyage\Core.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Voyage.h" />
     <ClInclude Include="src\Voyage\Application.h">
-      <Filter>Header Files</Filter>
+      <Filter>Voyage</Filter>
     </ClInclude>
-    <ClInclude Include="src\Voyage.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Voyage\Core.h">
+      <Filter>Voyage</Filter>
     </ClInclude>
     <ClInclude Include="src\Voyage\EntryPoint.h">
-      <Filter>Header Files</Filter>
+      <Filter>Voyage</Filter>
     </ClInclude>
+    <ClInclude Include="src\Voyage\Events\ApplicationEvent.h">
+      <Filter>Voyage\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Voyage\Events\Event.h">
+      <Filter>Voyage\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Voyage\Events\KeyEvent.h">
+      <Filter>Voyage\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Voyage\Events\MouseEvent.h">
+      <Filter>Voyage\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Voyage\ImGui\ImGuiLayer.h">
+      <Filter>Voyage\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Voyage\Layer.h">
+      <Filter>Voyage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Voyage\LayerStack.h">
+      <Filter>Voyage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Voyage\Log.h">
+      <Filter>Voyage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Voyage\Window.h">
+      <Filter>Voyage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vgpch.h" />
+    <ClInclude Include="src\Voyage\Input.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
+    <ClInclude Include="src\Voyage\KeyCodes.h" />
+    <ClInclude Include="src\Voyage\MouseButtonCodes.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Voyage\Application.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Voyage\Application.cpp">
+      <Filter>Voyage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Voyage\ImGui\ImGuiLayer.cpp">
+      <Filter>Voyage\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Voyage\Layer.cpp">
+      <Filter>Voyage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Voyage\LayerStack.cpp">
+      <Filter>Voyage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Voyage\Log.cpp">
+      <Filter>Voyage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vgpch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
   </ItemGroup>
 </Project>

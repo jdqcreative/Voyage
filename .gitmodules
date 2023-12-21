@@ -1,0 +1,12 @@
+[submodule "Hazel/vendor/spdlog"]
+	path = Hazel/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "Voyage/vendor/spdlog"]
+	path = Voyage/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "Voyage/vendor/GLFW"]
+	path = Voyage/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
+[submodule "Voyage/vendor/imgui"]
+	path = Voyage/vendor/imgui
+	url = https://github.com/TheCherno/imgui
